@@ -1,4 +1,4 @@
-nav{
+#nav{
     background-color: black;
     display: block;
     color: aliceblue;
@@ -19,58 +19,67 @@ nav{
     color: lightseagreen;
     text-shadow: 2px 2px 8px darkgreen;
     padding: 20px;
+    margin: 0;
     margin-left: 20px;
 
 }
-#logo h1{
-    margin: 0;
+
+.fa-sharp.fa-solid.fa-bars{
+    background-color: lightseagreen;
+    border: none;
+    box-shadow: 2px 2px 8px darkgreen;
+    width: 20px;
+    height: 20px;
+    padding:20px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 10px;
 }
 
 
 h2,h3{
     margin: 0;
 }
-li a{
+a{
     text-decoration: none;
     color: inherit;
 }
 .navig a{
-    padding:27px 20px 25px 20px;
+    padding:30px 30px 30px 20px;
 }
 .navig{
     color: lightseagreen;
 }
 li{
     display: inline;
-    padding:27px 20px 25px 20px;
+    padding: 23px  20px 25px 20px;
     align-items: center;
     text-transform: uppercase;
     text-shadow:2px 2px 8px darkgreen;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    
 }
 ul{
-    margin: 18px;
-    height: 70px;;
-    padding: 10px 0 0 0;
-    width: 100%;
+    margin: 2px 300px;
+    height: 90px;
+    width: 800px;
+    
 }
 body{
     margin: 0;
 }
 #button1{
-    background-color: mediumseagreen;
+    background-color:lightseagreen;
     border: none;
     border-radius: 2px;
     box-shadow: 2px 2px 8px darkgreen;
     box-sizing: border-box;
-    width: 120px;
-    height: 45px;
     align-items:center;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-right: 40px;
-    font-size:large;
-    padding: 20px 40px;
+    padding: 10px 40px;
+    font-size: large;
 
 }
 .navig:active{
@@ -83,7 +92,95 @@ body{
     color: black;
 }
 
-#button1:hover{
+#button1:hover,#button2:hover{
     transform: scale(1.1);
+    background-color: mediumseagreen;
+}
+.fa-sharp.fa-solid.fa-bars:hover {
+    background-color:mediumseagreen ;
+    cursor:pointer;
 }
 
+#dropdown-content,#button1{
+    display:none ;
+    z-index: 1;
+}
+
+
+#dropdown:hover #dropdown-content,#button1{
+    display: block;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    height: 1000px;
+}
+div h2{
+    color: lightseagreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:xx-large;
+    text-align: center;
+    text-shadow: 2px 2px 8px lightseagreen;
+    margin-top: 100px;
+}
+
+#button2{
+   margin: 0;
+   background-color: lightseagreen;
+   border: none;
+   border-radius: 2px;
+   box-shadow: 2px 2px 8px darkgreen;
+   box-sizing: border-box;
+   width: 200px;
+   height: 70px;
+   align-items:center;
+   text-transform: uppercase;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size:large;
+   padding: 20px 40px;
+   color: aliceblue;
+   align-content: center;
+   margin-left: 43%;
+
+margin-top: 50px;
+}
+@media screen and (max-width:1189px){
+    ul{
+        margin: 2px 200px;
+    }
+}
+
+
+@media screen and ( max-width:1086px){
+ ul{
+    margin: 2px 100px;
+}
+#button2{
+    margin-left: 40%;
+}
+}
+@media screen and ( max-width:986px){
+    #nav{
+        height: 85px;
+        width:100%;
+    }
+     #dropdown-content,#button1{
+        display:none ;
+        z-index: 1;
+    }
+    
+    
+    #dropdown:hover #dropdown-content,#button1{
+        display: block;
+    }
+    #dropdpwn:hover #dropdown-content ul .navig{ 
+    display: list-item;
+    position:relative ;
+    align-items: center;/*не знаю, фігня якась може колись дороблю*/
+}
+a {
+    position: relative;
+    display: inherit;
+}
+}
