@@ -1,4 +1,9 @@
-#nav{
+html{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
     background-color: black;
     display: block;
     color: aliceblue;
@@ -44,26 +49,26 @@ a{
     text-decoration: none;
     color: inherit;
 }
-.navig a{
-    padding:30px 30px 30px 20px;
-}
-.navig{
+.navig {
+    padding:30px 30px 33px;
     color: lightseagreen;
 }
 li{
-    display: inline;
-    padding: 23px  20px 25px 20px;
+    display: inline-flex;
+    padding:inherit;
     align-items: center;
     text-transform: uppercase;
     text-shadow:2px 2px 8px darkgreen;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     float: left;
+    letter-spacing: 1px;
     
 }
-ul{
-    margin: 2px 300px;
-    height: 90px;
-    width: 800px;
+ nav ul{
+    height: 92px;
+    width:inherit;
+    margin: 0 300px;
+    padding-inline-start: 0;
     
 }
 body{
@@ -116,6 +121,11 @@ body{
     width: 100%;
     height: 1000px;
 }
+
+#content{
+    height: 1000px;
+
+}
 div h2{
     color: lightseagreen;
     font-family: Arial, Helvetica, sans-serif;
@@ -142,26 +152,27 @@ div h2{
    color: aliceblue;
    align-content: center;
    margin-left: 43%;
+   position: inherit;
 
 margin-top: 50px;
 }
-@media screen and (max-width:1189px){
-    ul{
-        margin: 2px 200px;
+@media screen and (max-width:1257px){
+   nav ul{
+        margin:0 200px 0 300px;
     }
 }
 
 
-@media screen and ( max-width:1086px){
- ul{
-    margin: 2px 100px;
+@media screen and ( max-width:1156px){
+ nav ul{
+    margin: 0px 100px 0 200px;
 }
 #button2{
     margin-left: 40%;
 }
 }
-@media screen and ( max-width:986px){
-    #nav{
+@media screen and ( max-width:939px){
+    nav{
         height: 85px;
         width:100%;
     }
@@ -184,3 +195,67 @@ a {
     display: inherit;
 }
 }
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    display: block;
+    color: aliceblue;
+    height: 90px;
+    width: 100%;
+    text-align:right;
+    font-size: x-large;
+    position: sticky;
+    border-top:6px solid;
+    border-color: mediumseagreen;
+}
+#content li{
+    color: lightseagreen;
+}
+
+footer div ul{
+margin: 0;
+height: 90px;
+width: inherit;
+margin-right: 70px;
+}
+.foot {
+    padding:30px 30px 33px;
+    color: lightseagreen;
+}
+
+.foot:hover{
+    background-color: lightseagreen;
+    color: black;
+}
+
+#icons{
+    display:inline-block;
+    width: 48px;
+    height: 48px;
+    transition: width 2s;
+    margin: 0 50% 0 50%;
+}
+
+#icons:hover{
+    width: 60px;
+    height: 60px;
+}
+#insta img{
+    width: 48px;
+    height: 48px;
+    transition: width,height 2s;
+}
+
+#insta img:hover{
+    width: 60px;
+    height: 60px;
+}
+
